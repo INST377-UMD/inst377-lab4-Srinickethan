@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="page-title">INST377 - Lab 4</h1>
+
+    <!-- General Section -->
+    <section class="section">
+        <h2>Alert Me Section</h2>
+        <form id="alert-form">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" required>
+            <button type="button" onclick="alertMe()">Alert Me</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Change Color Section</h2>
+        <button onclick="changeColor()">Change Color</button>
+    </section>
+
+        <!-- Clear floats after the first two sections -->
+        <div class="clearfix"></div>
+
+    <section class="section">
+        <h2>Text Tester Section</h2>
+        <form id="text-form">
+            <input type="text" id="text" placeholder="Enter text">
+            <button type="button" onclick="validateText()">Validate Text</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Add Text Section</h2>
+        <button onclick="addText()">Add Text</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
